@@ -1,10 +1,11 @@
 import React from 'react'
+import FirstView from '../components/FirstView';
 import Form from '../components/Form'
 
-function HomePages(){
-    return(
+function HomePages() {
+    return (
         <div>
-            <h1 className='text-center'>Home Pages</h1>
+            <FirstView />
             <Form />
         </div>
     )

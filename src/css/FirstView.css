@@ -1,0 +1,18 @@
+* {
+  font-family: 'Oxanium', cursive;
+}
+
+.title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.imgBackground {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+
+}
