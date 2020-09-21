@@ -1,11 +1,9 @@
 import React from 'react';
 import '../css/FirstView.css'
-// import codigoBackground from '../img/codigoBackground.jpg'
 
 const FirstView = () => {
   return (
-    <div className="imgBackground">
-      {/* <img src={codigoBackground} alt="imagen de fondo" /> */}
+    <div className="imgBg d-flex container-fluid justify-content-center align-items-center">
       <h1 className="title">
         &#60;De <br />
         código <br />
