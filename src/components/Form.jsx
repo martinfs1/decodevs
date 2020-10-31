@@ -4,15 +4,20 @@ import Swall from 'sweetalert2'
 
 function Form() {
 
-    const [name, setName] = useState('')
+    const [dataForm, setDataForm] = useState({})
     const [lastname, setLastName] = useState('')
     const [celphone, setCelphone] = useState('')
     const [email, setEmail] = useState('')
     const [textarea, setTextarea] = useState('')
 
+    console.log(dataForm);
+
+    const handleChange = e => {
+        setDataForm({ ...dataForm, [e.target.name]: e.target.value })
+    }
 
     const clearState = () => {
-        setName('')
+        // setName('')
         setLastName('')
         setCelphone('')
         setEmail('')
@@ -22,10 +27,10 @@ function Form() {
     const handlerBottom = async (e) => {
         e.preventDefault()
 
-        if (name.trim() === '') {
-            Swall.fire('Campo Nombre Vacio', 'Por favor Completar el Campo Correctamente', 'error')
-            return
-        }
+        // if (name.trim() === '') {
+        //     Swall.fire('Campo Nombre Vacio', 'Por favor Completar el Campo Correctamente', 'error')
+        //     return
+        // }
         if (lastname.trim() === '') {
             Swall.fire('Campo Apellido Vacio', 'Por favor Completar el Campo Correctamente', 'error')
             return
@@ -47,7 +52,7 @@ function Form() {
 
         try {
             await axios.post('/api/v1/form', {
-                name: name.trim(),
+                // name: name.trim(),
                 lastname: lastname.trim(),
                 celphone: celphone.trim(),
                 email: email.trim(),
@@ -72,35 +77,35 @@ function Form() {
                 <div className="col col-md-6 col-12">
                     <form>
                         <div className="form-group">
-                            <label htmlFor="exampleInputEmail1">Nombre</label>
-                            <input type="text" className="form-control" value={name} name='name'
-                                id="exampleInputEmail1" aria-describedby="emailHelp"
-                                onChange={e => setName(e.target.value)} maxLength='10' placeholder='Nombre/s'/>
+                            <label htmlFor="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" className="form-control" name='name'
+                                aria-describedby="emailHelp"
+                                onChange={handleChange} maxLength='10' placeholder='Nombre/s'/>
                         </div>
-                        <div className="form-group">
+                        {/* <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Apellido</label>
-                            <input type="text" className="form-control" value={lastname} name='lastname'
+                            <input type="text" className="form-control" name='lastname'
                                 id="exampleInputPassword1"
-                                onChange={e => setLastName(e.target.value)} maxLength='20' placeholder='Apellido/s'/>
+                                onChange={handleChange} maxLength='20' placeholder='Apellido/s'/>
+                        </div> */}
+                        <div className="form-group">
+                            <label htmlFor="celphone">Teléfono Celular</label>
+                            <input type="text" className="form-control" name='celphone'
+                                id="celphone"
+                                onChange={handleChange} maxLength='11' placeholder='Fijo o Celular'/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Telefono</label>
-                            <input type="text" className="form-control" value={celphone} name='celphone'
-                                id="exampleInputPassword1"
-                                onChange={e => setCelphone(e.target.value)} maxLength='11' placeholder='Fijo o Celular'/>
+                            <label htmlFor="email">Email de Contacto</label>
+                            <input type="text" className="form-control" name='email'
+                                id="email"
+                                onChange={handleChange} maxLength='50'
+                                placeholder='mail@ejemplo.com' />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Email de Contacto</label>
-                            <input type="text" className="form-control" value={email} name='email'
-                                id="exampleInputPassword1"
-                                onChange={e => setEmail(e.target.value)} maxLength='50'
-                                placeholder='Por Ej: mail@dominio' />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Mensaje</label>
-                            <textarea type="text" className="form-control" value={textarea} name='textarea'
-                                id="exampleInputPassword1"
-                                onChange={e => setTextarea(e.target.value)} maxLength='200' placeholder='Escriibr Mensaje'/>
+                            <label htmlFor="message">Mensaje</label>
+                            <textarea type="text" className="form-control" name='textarea'
+                                id="message"
+                                onChange={handleChange} maxLength='200' placeholder='Escribir Mensaje'/>
                         </div>
 
                         <div className='d-flex justify-content-center'>
