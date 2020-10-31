@@ -11,8 +11,10 @@
   height: 100vh;
 }
 
-.title {
-  font-size: 80px;
-  color: #fff;
-  line-height: 70px;
+.title {  
+  color: #fff;  
+}
+
+.barra-navegacion {
+  background-color: #14214f;   
 }
