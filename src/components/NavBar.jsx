@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-export const NavBar = () => {
+export default function NavBar(props) {
+
+  console.log(props);
+
   return (
-    <>
       <nav className="navbar navbar-expand-sm barra-navegacion fixed-top navbar-dark">
         <a className="navbar-brand title" href="#">&#60;Decodevs_/&#62;</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,6 +18,5 @@ export const NavBar = () => {
           </div>
         </div>
       </nav>
-    </>
   )
 }
