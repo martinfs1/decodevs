@@ -4,11 +4,11 @@ import HomePages from './pages/HomePages';
 
 function App() {
   return (
-   <Router>
-     <Switch>
-       <Route path='/' component={HomePages}/>
-     </Switch>
-   </Router>
+    <Router>
+      <Switch>
+        <Route path='/' component={HomePages} />
+      </Switch>
+    </Router>
   );
 }
 

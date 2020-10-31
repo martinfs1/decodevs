@@ -1,0 +1,20 @@
+* {
+  font-family: 'Oxanium', cursive;
+}
+
+.imgBg {
+  background: url('../img/CodigoBg1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.title {  
+  color: #fff;  
+}
+
+.barra-navegacion {
+  background-color: #14214f;   
+}

@@ -1,5 +1,5 @@
-import axios from 'axios'
 import React, { useState } from 'react'
+import axios from 'axios'
 import Swall from 'sweetalert2'
 
 function Form() {
@@ -21,16 +21,11 @@ function Form() {
         setLastName('')
         setCelphone('')
         setEmail('')
-        setTextarea('')       
+        setTextarea('')
     }
 
     const handlerBottom = async (e) => {
         e.preventDefault()
-
-        // if (name.trim() === '') {
-        //     Swall.fire('Campo Nombre Vacio', 'Por favor Completar el Campo Correctamente', 'error')
-        //     return
-        // }
         if (lastname.trim() === '') {
             Swall.fire('Campo Apellido Vacio', 'Por favor Completar el Campo Correctamente', 'error')
             return
@@ -61,51 +56,45 @@ function Form() {
             Swall.fire({
                 icon: 'success',
                 title: 'Envio Exitoso. Revisa Tu Mail',
-              });
+            });
             clearState()
-            
+
         } catch (error) {
             console.log(error)
         }
     }
 
-    
+
 
     return (
-        <div className='container'>
-            <div className='row'>
-                <div className="col col-md-6 col-12">
+        <div className='container my-3'>
+            <div className='row mx-0 justify-content-between flex-wrap'>
+                <div className="col-md-6 col-12 px-0">
                     <form>
                         <div className="form-group">
-                            <label htmlFor="nombre">Nombre Completo</label>
-                            <input type="text" id="nombre" className="form-control" name='name'
+                            {/* <label htmlFor="nombre">Nombre Completo</label> */}
+                            <input type="text" id="nombre" className="form-control rounded" name='name'
                                 aria-describedby="emailHelp"
-                                onChange={handleChange} maxLength='10' placeholder='Nombre/s'/>
+                                onChange={handleChange} maxLength='10' placeholder='Nombre Completo'/>
                         </div>
-                        {/* <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Apellido</label>
-                            <input type="text" className="form-control" name='lastname'
-                                id="exampleInputPassword1"
-                                onChange={handleChange} maxLength='20' placeholder='Apellido/s'/>
-                        </div> */}
                         <div className="form-group">
-                            <label htmlFor="celphone">Teléfono Celular</label>
-                            <input type="text" className="form-control" name='celphone'
+                            {/* <label htmlFor="celphone">Teléfono Celular</label> */}
+                            <input type="text" className="form-control rounded" name='celphone'
                                 id="celphone"
-                                onChange={handleChange} maxLength='11' placeholder='Fijo o Celular'/>
+                                onChange={handleChange} maxLength='11' placeholder='Tel. Celular'/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="email">Email de Contacto</label>
-                            <input type="text" className="form-control" name='email'
+                            {/* <label htmlFor="email">Email de Contacto</label> */}
+                            <input type="text" className="form-control rounded" name='email'
                                 id="email"
                                 onChange={handleChange} maxLength='50'
                                 placeholder='mail@ejemplo.com' />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="message">Mensaje</label>
-                            <textarea type="text" className="form-control" name='textarea'
+                            {/* <label htmlFor="message">Mensaje</label> */}
+                            <textarea type="text" className="form-control rounded" name='textarea'
                                 id="message"
-                                onChange={handleChange} maxLength='200' placeholder='Escribir Mensaje'/>
+                                onChange={handleChange} maxLength='200' placeholder='Escribe un Mensaje'/>
                         </div>
 
                         <div className='d-flex justify-content-center'>
