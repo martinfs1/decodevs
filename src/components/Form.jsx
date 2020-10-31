@@ -16,7 +16,7 @@ function Form() {
         setLastName('')
         setCelphone('')
         setEmail('')
-        setTextarea('')       
+        setTextarea('')
     }
 
     const handlerBottom = async (e) => {
@@ -56,15 +56,15 @@ function Form() {
             Swall.fire({
                 icon: 'success',
                 title: 'Envio Exitoso. Revisa Tu Mail',
-              });
+            });
             clearState()
-            
+
         } catch (error) {
             console.log(error)
         }
     }
 
-    
+
 
     return (
         <div className='container'>
@@ -75,19 +75,19 @@ function Form() {
                             <label htmlFor="exampleInputEmail1">Nombre</label>
                             <input type="text" className="form-control" value={name} name='name'
                                 id="exampleInputEmail1" aria-describedby="emailHelp"
-                                onChange={e => setName(e.target.value)} maxLength='10' placeholder='Nombre/s'/>
+                                onChange={e => setName(e.target.value)} maxLength='10' placeholder='Nombre/s' />
                         </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Apellido</label>
                             <input type="text" className="form-control" value={lastname} name='lastname'
                                 id="exampleInputPassword1"
-                                onChange={e => setLastName(e.target.value)} maxLength='20' placeholder='Apellido/s'/>
+                                onChange={e => setLastName(e.target.value)} maxLength='20' placeholder='Apellido/s' />
                         </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Telefono</label>
                             <input type="text" className="form-control" value={celphone} name='celphone'
                                 id="exampleInputPassword1"
-                                onChange={e => setCelphone(e.target.value)} maxLength='11' placeholder='Fijo o Celular'/>
+                                onChange={e => setCelphone(e.target.value)} maxLength='11' placeholder='Fijo o Celular' />
                         </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Email de Contacto</label>
@@ -100,7 +100,7 @@ function Form() {
                             <label htmlFor="exampleInputPassword1">Mensaje</label>
                             <textarea type="text" className="form-control" value={textarea} name='textarea'
                                 id="exampleInputPassword1"
-                                onChange={e => setTextarea(e.target.value)} maxLength='200' placeholder='Escriibr Mensaje'/>
+                                onChange={e => setTextarea(e.target.value)} maxLength='200' placeholder='Escribir Mensaje' />
                         </div>
 
                         <div className='d-flex justify-content-center'>
