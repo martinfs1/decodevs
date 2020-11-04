@@ -3,19 +3,60 @@
 }
 
 .imgBg {
-  background: url('../img/CodigoBg1.png');
+ 
+  object-fit: cover;
+  height: 95vh;
+  /* width: 100vh; */
+}
+.imgBgForm {
+  background: url('../img/meeting-room-730679_1920.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
+  background-size: cover;  
+
 }
 
 .title {  
-  color: #fff;  
+  color: black;  
 }
 
-.barra-navegacion {
-  background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+/* .barra-navegacion {
+  background-color: #F2F2F2  
+} */
+.nav-link:hover, .navbar-brand:hover{
+  color: #ff4f1f !important;
+}
+.lang {
+  background: #fc4a1a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+ }
 
+.imgLang {
+  height: 20vh;
+}
+.footer {
+  background-color:#F2F2F2;
+}
+
+.redesIcon {
+  color: black;
+  font-size: 30px;
+}
+
+.flecha {
+  height: 30px;
+  color:  #ff4f1f;
+}
+.btn-menu {
+  height: 40px;   
+  
+}
+
+.navTransparent {
+  opacity: 0.7 !important;
+  background-color: black;
+  
 }
