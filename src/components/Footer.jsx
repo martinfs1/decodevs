@@ -1,6 +1,6 @@
 import React from 'react'
 import flecha from '../img/flecha.png'
-import { Link } from 'react-router-dom'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -9,16 +9,21 @@ const Footer = () => {
         <p>Copyright 2020 - Decodevs todos los derechos reservados</p>
       </div>
       <div className="position-absolute align-self-end">
-        <Link to="!#"> <img className="flecha" src={flecha} alt="flecha" /></Link>
+        <Link
+          to="top"
+          spy={true}
+          smooth={true}
+          duration={800}
+        > <img className="flecha" src={flecha} alt="flecha" /></Link>
       </div>
-      <div className="col-12 col-md-4 order-1 order-md-2 ">
+      <div className="col-12 col-md-4 order-1 order-md-2" id="contacto">
         <h2 className=" mt-4 title text-center">Nuestras Redes</h2>
         <div className="text-center text-md-right pr-md-5 my-3 my-md-0 ">
-          <a href="!#" className="title text-decoration-none">+ 54 9 381 6261384 <i className="fab redesIcon my-2 fa-whatsapp ml-3"></i></a>
+          <a href="http://bit.ly/decodevs" className="text-dark text-decoration-none">+ 54 9 381 6261384 <i className="fab redesIcon my-2 fa-whatsapp ml-3 wtsap"></i></a>
           <br />
-          <a href="!#" className="title text-decoration-none">Decodevs <i className="fab redesIcon my-2 fa-facebook ml-3"></i></a>
+          <a href="https://www.facebook.com/dcdsolucionesweb" target="_blank" className="text-dark text-decoration-none">Decodevs <i className="fab redesIcon my-2 fa-facebook ml-3 fb"></i></a>
           <br />
-          <a href="!#" className="title text-decoration-none">contacto@decodevs.com <i className="far redesIcon my-2 fa-envelope ml-3"></i></a>
+          <a href="!#" className="text-dark text-decoration-none">contacto@decodevs.com <i className="far redesIcon my-2 fa-envelope ml-3 gmail"></i></a>
         </div>
       </div>
     </div>

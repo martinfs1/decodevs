@@ -5,31 +5,28 @@ import martin from '../img/martin.jpg'
 
 export const Nosotros = () => {
   return (
-    <div className="container-fluid my-4">
-      <h2 className="text-center display-4">Nosotros</h2>
-      <div className="card-deck mx-auto">
-        <div className="card ">
-          <img src={Andres} className="card-img-top" alt="..." />
+    <div className="container-fluid my-4" id="nosotros">
+      <h2 className="text-center display-4 subtitle">Nosotros</h2>
+      <div className="row mx-auto justify-content-around">
+        <div className="foto">
+          <img src={Andres} width="200" height="200" className="" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+            <h5 className="card-title">Andres Perlo</h5>
+            <p className="card-text">Desarrollador Web Backend</p>
           </div>
         </div>
-        <div className="card">
-          <img src={marco} className="card-img-top" alt="..." />
+        <div className="foto">
+          <img src={marco} className="" width="200" height="200" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+            <h5 className="card-title">Marco Baiad</h5>
+            <p className="card-text">Desarrollador Web Fullstack</p>
           </div>
         </div>
-        <div className="card">
-          <img src={martin} className="card-img-top" alt="..." />
+        <div className="foto">
+          <img src={martin} className="" width="200" height="200" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+            <h5 className="card-title">Martin Sandander</h5>
+            <p className="card-text">Desarrollador Web Frontend</p>
           </div>
         </div>
       </div>

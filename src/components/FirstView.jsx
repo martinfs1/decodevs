@@ -7,18 +7,16 @@ import focos from '../img/focos.jpg'
 
 const FirstView = () => {
 
-
   return (
     <>
-      {/* <div className=" container-fluid">
-        <div className="row mx-0"> */}
-      <div className="col-md-12 pr-0 pl-0">
+      <div className="col-md-12 pr-0 pl-0" id="top">
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
           <ol className="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
+
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src={panorama} className="d-block w-100 imgBg" alt="edificios" />
@@ -31,12 +29,8 @@ const FirstView = () => {
             </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
           </a>
         </div>
       </div>

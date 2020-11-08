@@ -28,7 +28,7 @@ function Form() {
     }
 
     return (
-        <div className='container-fluid pt-3 pb-3 text-white imgBgForm'>
+        <div className='container-fluid pt-3 pb-3 text-white imgBgForm' id="contacto">
             <h2 className="title text-center text-black display-4" ref={nodeCont}>Contacto</h2>
             <p className="title text-center">¿Tenés una idea y querés plasmarla? ¡Nosotros te ayudamos!</p>
             <p className="title text-center">Dejanos tu mensaje en el siguiente formulario de contacto y pronto nos comunicaremos.</p>
@@ -59,7 +59,7 @@ function Form() {
                                     onChange={handleChange} maxLength='200' placeholder='Escribe un Mensaje' />
                             </div>
 
-                            <button type="submit" className="btn btn-dark font-weight-bold" onClick={handlerBottom}>Enviar</button>
+                            <button type="submit" className="btn btn-dark font-weight-bold boton" onClick={handlerBottom}>Enviar</button>
                         </form>
                     </div>
                 </div>
