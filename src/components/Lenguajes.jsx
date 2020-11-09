@@ -12,6 +12,7 @@ export default class AutoPlay extends React.Component {
 
   render() {
     const settings = {
+      arrows: false,
       dots: false,
       infinite: true,
       slidesToShow: 4,
@@ -29,7 +30,7 @@ export default class AutoPlay extends React.Component {
             <h2 className="title text-center display-4">Diseñamos</h2>
             <p className="title text-center">Tu proyecto con los últimos lenguajes de programación</p>
           </div>
-          <Slider {...settings}>
+          <Slider className="" {...settings}>
             <div className="">
               <img src={html} className="d-block w-100 imgLang" alt="html5" />
             </div>

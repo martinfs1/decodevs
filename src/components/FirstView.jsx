@@ -28,10 +28,10 @@ const FirstView = () => {
               <img src={focos} className="d-block w-100 imgBg" alt="focos" />
             </div>
           </div>
-          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          </a>
+          {/* <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          </a> */}
+          {/* <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          </a> */}
         </div>
       </div>
       {/* <div className="col-md-4 flex-column pt-4">

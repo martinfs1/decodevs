@@ -2,10 +2,10 @@
   font-family: 'Oxanium', cursive;
 }
 
-.imgBg { 
+.imgBg {  
   object-fit: cover;
-  height: 95vh;
-  /* width: 100vh; */
+  height: 99vh;
+  width: 100vh;
 }
 .imgBgForm {
   background: url('../img/meeting-room-730679_1920.jpg');
@@ -86,4 +86,6 @@
   background-color: #F2F2F2 ;
   border-radius: 5px;
 }
-
+.dcdvsLogo {
+  font-family: 'Alex Brush', cursive;
+}

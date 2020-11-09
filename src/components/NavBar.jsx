@@ -31,7 +31,7 @@ function NavBar() {
   window.onscroll = func
 
   return (
-    <nav className="navbar-dark navbar navbar-expand-sm fixed-top" ref={navBartrans}>
+    <nav className="navbar-dark navbar navbar-expand-md fixed-top" ref={navBartrans}>
       <Link
         className="navbar-brand text-white"
         to="top"
@@ -42,20 +42,20 @@ function NavBar() {
       <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div className="navbar-nav" >
           <Link
-            className="nav-link text-white"
+            className="nav-link text-white pb-0 mb-0"
             to="nosotros"
             spy={true}
             smooth={true}
             duration={800}>Nosotros<span className="sr-only">(current)</span></Link>
           <Link
-            className="nav-link text-white"
+            className="nav-link text-white pb-0"
             to="proyectos"
             spy={true}
             offset={-80}
             smooth={true}
             duration={800}>Proyectos</Link>
           <Link
-            className="nav-link text-white"
+            className="nav-link text-white pb-0"
             to="contacto"
             spy={true}
             offset={-60}
