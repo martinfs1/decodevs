@@ -1,7 +1,10 @@
 * {
   font-family: 'Oxanium', cursive;
 }
-
+.olas{
+  height: 40px;
+  width: 100%;
+}
 .imgBg {  
   object-fit: cover;
   height: 99vh;
